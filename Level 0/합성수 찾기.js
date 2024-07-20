@@ -1,40 +1,38 @@
+// (1)
 function solution(n) {
   let answer = 0;
-  let count = 0;
-
-  let arr = [];
-  for (let i = 1; i <= n; i++) {
-    arr.push(i);
-  }
-
-  for (let i = 0; i <= arr.length - 1; i++) {
-    for (let j = 1; j <= arr[i]; j++) {
-      if (arr[i] % j === 0) {
+  for (let i = 4; i <= n; i++) {
+    let count = 0;
+    for (let j = 1; j <= Math.sqrt(i); j++) {
+      // 제곱근까지만 반복. (j <= Math.sqrt(i) or  j * j <= i)
+      if (i % j === 0) {
         count++;
+        if (j * j !== i) count++;
       }
       if (count >= 3) {
         answer++;
-        count = 0;
         break;
       }
     }
-    count = 0;
   }
   return answer;
 }
 
-// ?이 코드 되게 깔끔한데?
-// but 이 코드는 주어진 수 n 이하에서 소수의 개수를 세는 함수. 하지만 문제의 요구사항은 합성수의 개수.
-function solution(n) {
-  let count = 0;
-  let tar = 3;
-  while (tar++ < n) {
-    for (let i = 2; i <= Math.sqrt(tar); i++) {
-      if (tar % i === 0) {
-        count++;
-        break;
-      }
-    }
-  }
-  return count;
-}
+// (2)
+// function solution(n) {
+//   let count = 0;
+//   for (let i = 4; i <= n; i++) {
+//     // 4부터 n까지 반복 (4는 첫 번째 합성수)
+//     for (let j = 2; j <= Math.sqrt(i); j++) {
+//       if (i % j === 0) {
+//         count++;
+//         break;
+//       }
+//     }
+//   }
+//   return count;
+// }
+// break는 i가 j의 배수이므로, i는 적어도 두 개의 약수를 갖고 있다는 것을 보장.
+// but 정확한 약수를 세는 건 부족함. only 합성수.
+
+// 제곱근까지만 확인했기 때문에 i는 최소한 두 개의 약수를 가지고 있으며, 이 경우 합성수인지 여부를 판단할 수 있다.

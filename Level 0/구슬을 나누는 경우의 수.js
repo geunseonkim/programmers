@@ -38,7 +38,7 @@ function solution(balls, share) {
 }
 
 // const factorial = (n) => {
-//   n === 0 ? 1 : n * factorial(n); // factorial 재귀함수
+//   n === 0 ? 1 : n * factorial(n - 1); // factorial 재귀함수
 // };
 // function solution(balls, share) {
 //   return Math.round(
