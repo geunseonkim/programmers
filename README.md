@@ -1,9 +1,13 @@
-# programmers
-collection of programmers questions
+# Programmers - Collection of Programming Questions
 
-***
+**JavaScript**
 
-## JavaScript
-Level 0 - Beginner Problems (49/100) (24.07.08-24.07.24)
+## Level 0 - Beginner Problems
 
-Level 0 - Beginner Problems (51/100) (25.03.05- in progress)
+- **Completed:**
+  - **49/100**
+  - **Dates:** 24.07.08 - 24.07.24
+
+- **In Progress:**
+  - **51/100**
+  - **Dates:** 25.03.05 - Ongoing
