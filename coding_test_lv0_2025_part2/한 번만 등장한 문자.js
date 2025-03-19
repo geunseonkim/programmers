@@ -14,8 +14,10 @@ function solution(s) {
 /* Review
   
 s.indexOf(s[i]) === s.lastIndexOf(s[i])
+answer.split("").sort().join("")
 
 Used indexOf and lastIndexOf to check if a character appears only once in the string
+Used split to convert string to array for sorting
 */
 
 function solution(s) {
