@@ -9,5 +9,11 @@ function solution(my_str, n) {
 }
 
 /* Review
-      use array.slice to push str to array
-    */
+    use slice cut a given array to fit a condition
+    another way is bellow
+*/
+
+//use regular expression
+function solution(my_str, n) {
+  return my_str.match(new RegExp(`.{1,${n}}`, "g"));
+}
