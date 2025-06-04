@@ -5,8 +5,8 @@ const readline = require("readline"); // Node.js가 제공하는 readline 모듈
 const rl = readline.createInterface({
   // rl : 입력을 읽는 인터페이스.
   // 입출력 인터페이스를 만들어서 사용자 입력을 받을 준비를 함
-  input: process.stdin, // "표준 입력". 사용자가 키보드로 입력하는 데이터를 읽어들임.
-  output: process.stdout, // "표준 출력". 화면(콘솔)에 출력하겠음.
+  input: process.stdin, // "표준 입력". 사용자가 '키보드'로 입력하는 데이터를 읽어들임.
+  output: process.stdout, // "표준 출력". '화면'(콘솔)에 출력하겠음.
 });
 
 let input = [];
@@ -28,23 +28,16 @@ Node.js에서 on("이벤트명", 콜백함수)은 특정한 일이 발생했을 
  */
 
 // 한 줄 입력을 출력.
-const readline = require("readline");
-const rl = readline
-  .createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  })
-  .on("line", console.log);
+// const readline = require("readline");
+// const rl = readline
+//   .createInterface({
+//     input: process.stdin,
+//     output: process.stdout,
+//   })
+//   .on("line", console.log);
 
-// 입출력 구조
-const readline = require("readline");
-const rl = readline.createInterface({
-  input: process.stdin, // 표준 입력 (키보드)
-  output: process.stdout, // 표준 출력 (화면)
-});
 // readline 모듈에서 createInterface 메서드로 rl 객체를 만들고, 그걸 통해 사용자 입력을 처리.
-
-// overall.
+// overall
 // Node.js가 제공하는 readline 모듈을 불러옴. readline 모듈에서 createInterface 메소드로 rl 객체 생성. rl은 입력을 읽는 인터페이스(TV-리모컨).
 // 입출력 인터페이스로 사용자의 입력을 받을 것: 표준 입력(사용자가 키보드에 입력하는 거), 표준 출력(화면(콘솔)에 출력하는 거).
 // Node.js에서 on 함수 -> .on("이벤트명", 콜백함수)를 씀. "line" 이벤트로 사용자가 한 줄 입력할 때마다 실행되는 콜백함수를 등록, "close" 이벤트는 입력 종료시 실행되는 콜백함수 등록.
