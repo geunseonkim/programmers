@@ -16,5 +16,5 @@
 ## Level 0 - Basic/Foundation Problems
 
 - **In Progress:**
-  - **51/100**
+  - **0/124**
   - **Dates:** 25.06.05 - Ongoing
