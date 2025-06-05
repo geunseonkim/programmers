@@ -21,7 +21,7 @@ const rl = readline
   });
 
 /* Review
-string method: repeat
+문자열 메소드 repeat 사용.
  */
 
 // other way
