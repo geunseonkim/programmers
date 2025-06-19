@@ -13,7 +13,7 @@ const rl = readline
   });
 
 /* Review
-
+홀짝 구분시, if문 외에 삼항 연산자 or 배열 활용.
  */
 
 // other way
