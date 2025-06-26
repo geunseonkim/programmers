@@ -7,3 +7,12 @@ function solution(arr) {
 /* Review
 Simple and straightforward. nothing special.
  */
+
+//other way
+function solution(arr) {
+  var answer = "";
+  arr.forEach((str) => {
+    answer += str;
+  });
+  return answer;
+}
